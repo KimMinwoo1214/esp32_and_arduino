@@ -17,8 +17,8 @@ class ArduinoMonitor(QWidget):
         self.timer = self.startTimer(1)  # 1ms마다 업데이트
 
     def initUI(self):
-        self.setWindowTitle('Serial Monitor')
-        self.setGeometry(100, 100, 400, 300)
+        self.setWindowTitle('Serial Monitor') #타이틀 설정
+        self.setGeometry(100, 100, 400, 300) #윈도우 크기
 
         self.layout = QVBoxLayout()
 

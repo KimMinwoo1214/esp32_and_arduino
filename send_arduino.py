@@ -22,6 +22,3 @@ while True:
 
 # 시리얼 포트 닫기
 ser.close()
-
-# 시리얼 포트 닫기
-ser.close()

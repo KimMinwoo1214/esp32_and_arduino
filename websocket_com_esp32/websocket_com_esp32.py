@@ -5,13 +5,17 @@ ws = websocket.WebSocket()
 ws.connect("ws://172.30.1.96")
 print("Connected to WebSocket server")
 
-# Ask the user for some input and transmit it
-str = input("Say something: ")
-ws.send(str)
+while True:
+    # Ask the user for some input and transmit it
+    str = input("Say something: ")
+    ws.send(str)
 
-# Wait for server to respond and print it
-result = ws.recv()
-print("Received: " + result)
+    # Wait for server to respond and print it
+    result = ws.recv()
+    print("Received: " + result)
+    
+    if str == 's':
+        break
 
 # Gracefully close WebSocket connection
 ws.close()
